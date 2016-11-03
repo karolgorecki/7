@@ -1,0 +1,12 @@
+Some nice and simple file
+
+ABC and some baz
+foo moo buu
+DEF
+
+Foo
+Moo moo baz
+
+Bar
+
+Bazzzzzz baz baz
