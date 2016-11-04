@@ -1,0 +1,6 @@
+one, two, three, four
+kotel, piesel, pawel, zabel
+polak, rusek, niemiec, japonczyk
+audi, bmw, mercedes, fiat
+ruby, javascript, golang, haskell
+foo, moo, boo, bar
