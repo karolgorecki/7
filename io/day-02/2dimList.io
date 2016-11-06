@@ -33,6 +33,16 @@ Td set := method(x,y,v,
 Td get := method(x,y,
     self at(x) at(y)
 )
+Td save := method(name, File open(name) write(serialized) close)
+Td load := method(name,
+    a2d := doFile(name)
+    res := Td dim(a2d size, a2d at(0) size)
+    a2d foreach(i,v,
+        v foreach(idx,val,
+            res set(i,idx,val)
+        )
+    )
+)
 
 wot := Td dim(2,2)
 wot set(0,0,"A") set(0,1, "B") set(1,1, "D") set(1,0, "C")
@@ -45,3 +55,8 @@ wat set(0,0, "LOL") get(0,0) println
 
 wot show println
 wat show println
+
+wot save("./foo.txt")
+loaded := Td load("./mock.txt")
+
+loaded show println
