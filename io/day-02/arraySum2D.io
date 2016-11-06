@@ -10,6 +10,9 @@ List sum2d := method(
 
     sum
 )
+
+List sum2dNew := method(self flatten sum)
+
 a2d := list(
     list(1, 2, 3),
     list(10, 20, 30),
@@ -17,3 +20,4 @@ a2d := list(
 )
 
 a2d sum2d println
+a2d sum2dNew println
